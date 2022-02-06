@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Inconsolata:wght@200&display=swap');
+
+
+
+.button {
+    height: 4em;
+    width: 5rem;
+    font-size: 1em;
+    border-radius: 10px;
+    color: black;
+    background: rgb(253, 253, 253);
+    font-family: 'Arvo', serif;
+}
+
+.button:hover {
+    box-shadow: 2px 2px 3px 3px rgb(104, 104, 104);
+}
+
+.equal {
+    height: 3em;
+    width: 15rem;
+    font-size: 1.5em;
+    border-radius: 10px;
+    color: white;
+    background: rgb(226, 56, 56);
+}

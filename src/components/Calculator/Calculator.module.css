@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
+
+.buttons {
+    background-color: rgba(23, 42, 51, 0.568);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    
+    justify-items:center;
+    column-gap: 2px;
+    row-gap: 2px;
+    border-radius: 20px;
+}
+
+
+.calculator {
+    display: grid;
+    grid-template-rows: minmax(200px 350px) 1fr;
+  grid-template-columns: 1fr;
+  max-width: 500px;
+  align-items: stretch;
+  font-family: 'Inconsolata', monospace;
+}
+
+.h {
+    text-align: center;
+}
+
+
+.equal {
+     grid-column: 3/5; 
+    
+}
+
+.multiply { 
+    grid-column: 4/5;
+}
