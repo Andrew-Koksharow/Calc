@@ -5,7 +5,7 @@
 .button {
     height: 4em;
     width: 5rem;
-    font-size: 1em;
+    font-size: 1.5rem;
     border-radius: 10px;
     color: black;
     background: rgb(253, 253, 253);
@@ -13,12 +13,12 @@
 }
 
 .button:hover {
-    box-shadow: 2px 2px 3px 3px rgb(104, 104, 104);
+    box-shadow: 2px 2px 3px 3px rgb(14, 13, 13);
 }
 
 .equal {
-    height: 3em;
-    width: 15rem;
+    height: 2.5em;
+    width: 10em;
     font-size: 1.5em;
     border-radius: 10px;
     color: white;

@@ -30,22 +30,46 @@ const Provider = (props) => {
         if (memoryNumber) {
             setFirstNumber();
         }
-    };
-        const equalButton = () => {
-            if (number && memoryNumber) {
-switch (operator) {
-    case('+'): setNumber(parseInt(number)+parseInt(memoryNumber))
-}
-            }
+        if (type === 'C') {
+            setNumber('');
+            setMemoryNumber('');
         }
-  
+
+        //
+       
+        //
+
+    };
+    const equalButton = () => {
+        if (number && memoryNumber) {
+            switch (operator) {
+                case ('+'): setNumber(parseFloat(memoryNumber) + parseFloat(number))
+                    break;
+                case ('-'): setNumber(parseInt(memoryNumber) - parseInt(number));
+            }
+            // setNumber('')
+        }
+    }
+
+    // const backupButton = (type) => {
+    //     if (type === '<-') {
+    //         if (number && !memoryNumber) {
+    //             number.replace(/$\d/,'');
+    //         }
+
+
+    //     }
+    // }
 
 
 
 
     return (
         <contextNumber.Provider
-            value={{ number, setNumber, setNumberDisplay, setFirstNumber, setOperator, memoryNumber, equalButton }}
+            value={{
+                number, setNumber, setNumberDisplay, setFirstNumber,
+                setOperator, memoryNumber, equalButton, operator
+            }}
         >
             {props.children}
         </contextNumber.Provider>

@@ -3,10 +3,10 @@ import val from './Button.module.css';
 import {contextNumber} from '../Provider';
 
 
-let FunctionalButton = ({value,cl}) => {
+let FunctionalButton = ({value}) => {
   const {setOperator} = useContext(contextNumber);
     return (
-        <button className={cl =='equal' ? val.equal  :  val.button} onClick={()=> {setOperator(value)}}>
+        <button className={val.button} onClick={()=> {setOperator(value)}}>
 {value}
         </button>
     )
