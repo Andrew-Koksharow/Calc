@@ -10,9 +10,10 @@ const {number,memoryNumber,operator} = useContext(contextNumber);
 
     return (
         <><h2 className={val.input}>
-            {number.length === 0 && memoryNumber.length === 0 ? 'Enter value' : number || memoryNumber}
-        </h2><p>
              {memoryNumber} {operator === 'C' || operator === '<-' ? '' : operator}  {number}
+            
+        </h2><p>
+        {number.length === 0 && memoryNumber.length === 0 ? 'Enter value' : number || memoryNumber}
             </p></> 
     )
 }

@@ -1,4 +1,4 @@
-import { type } from '@testing-library/user-event/dist/type';
+
 import React, { useState } from 'react';
 
 
@@ -45,9 +45,15 @@ const Provider = (props) => {
             switch (operator) {
                 case ('+'): setNumber(parseFloat(memoryNumber) + parseFloat(number))
                     break;
-                case ('-'): setNumber(parseInt(memoryNumber) - parseInt(number));
+                case ('-'): setNumber(parseFloat(memoryNumber) - parseFloat(number));
+                break;
+                case('*'): setNumber(parseFloat(memoryNumber) * parseFloat(number));
+                break;
+                case('/'): setNumber(parseFloat(memoryNumber) / parseFloat(number));
+                break;
             }
-            // setNumber('')
+            setMemoryNumber('');
+            whyOperator('');
         }
     }
 

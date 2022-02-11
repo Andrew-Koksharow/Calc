@@ -1,4 +1,4 @@
-import react, {useContext} from 'react';
+import React, {useContext} from 'react';
 import val from './Button.module.css';
 import {contextNumber} from '../Provider';
 

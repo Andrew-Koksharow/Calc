@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Inconsolata:wght@200&family=Oswald:wght@300;400&display=swap');
+
 .input { 
-    border: 2px double black;
-    height: 2em;
+    font-family: 'Arvo', serif;
+
+    font-family: 'Inconsolata', monospace;
+
+    font-family: 'Oswald', sans-serif;
+    border: 3px double rgb(65, 59, 151);
+    height: 50px;
+        background-color: bisque;
+     
+
 }
 

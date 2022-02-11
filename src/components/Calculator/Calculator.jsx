@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Display from '../Display/Display';
 import Button from '../Button/Button';
 import FunctionalButton from '../Button/FunctionalButton';
@@ -15,7 +15,8 @@ const Calculator = () => {
     return (
         <div className={val.calculator}>
             <h2 className={val.h}>Calculator</h2>
-            <Display />
+            <div className='display'><Display /></div>
+            
             <div className={val.buttons}>
                 <FunctionalButton value={`C`} />
                 <FunctionalButton value={`<-`} />
@@ -35,13 +36,7 @@ const Calculator = () => {
                 <Button value={0} />
                 <Button value={'.'} />
                 <div className={val.equal}><Equal /></div>
-
-                
-
-
             </div>
-
-
 
         </div>
     )
