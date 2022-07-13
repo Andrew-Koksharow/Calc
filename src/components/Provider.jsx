@@ -57,15 +57,7 @@ const Provider = (props) => {
         }
     }
 
-    // const backupButton = (type) => {
-    //     if (type === '<-') {
-    //         if (number && !memoryNumber) {
-    //             number.replace(/$\d/,'');
-    //         }
-
-
-    //     }
-    // }
+  
 
 
 
