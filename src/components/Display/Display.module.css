@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Inconsolata:wght@200&family=Oswald:wght@300;400&display=swap');
 
-.input { 
+input { 
     font-family: 'Arvo', serif;
 
     font-family: 'Inconsolata', monospace;

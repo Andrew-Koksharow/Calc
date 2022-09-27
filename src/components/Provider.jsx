@@ -74,7 +74,7 @@ const Provider = (props) => {
         <contextNumber.Provider
             value={{
                 number, setNumber, setNumberDisplay, setFirstNumber,
-                setOperator, memoryNumber, equalButton, operator
+                setOperator, memoryNumber, equalButton, operator, whyOperator
             }}
         >
             {props.children}

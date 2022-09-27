@@ -14,7 +14,7 @@ const Calculator = () => {
 
     return (
         <div className={val.calculator}>
-            <h2 className={val.h}>Calculator</h2>
+            <header className={val.h}>Calculator</header>
             <div className='display'><Display /></div>
             
             <div className={val.buttons}>
